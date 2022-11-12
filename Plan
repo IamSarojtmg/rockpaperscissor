@@ -1,0 +1,19 @@
+Does your program have a user interface? What will it look like? What functionality will the interface have? 
+Sketch this out on paper.
+
+
+
+What inputs will your program have? Will the user enter data or will you get input from somewhere else?
+The input will be hardcoded. 
+
+
+What’s the desired output?
+The desired output will display a string of the result
+
+
+Given your inputs, what are the steps necessary to return the desired output?
+if user enters rock computer will win if it pulls paper.
+sissor will be beaten by rock
+paper will be beaten by scissor.
+
+
