@@ -9,50 +9,54 @@ function getComputerChoice() {
     return(getRandom)
 
 }
+let playerSelection
+let computerSelection
 
-//function for one single round. 
-// Takes two parameter 
-let playerSelection = prompt('Enter rock, paper or scissor')
-let computerSelection = getComputerChoice()
-
-
-//create a function
 function playRound(playerSelection, computerSelection) {
-    let conversion = playerSelection.toLowerCase()
-    console.log(conversion)
-
+    playerSelection = prompt('Enter rock, paper or scissor');
+    
+    computerSelection = getComputerChoice();
+    
+    const conversion = playerSelection.toLowerCase()//convert string to lower case
+    
     if (conversion === 'rock' && computerSelection === 'paper') {
-        alert('you lose as paper beats rock')
+        console.log('you lose as paper beats rock')
     }
     
     else if (conversion === 'rock' && computerSelection === 'scissor' ) {
-        alert('You win as rock beats scissor')
+        console.log('You win as rock beats scissor')
     }
     
     else if (conversion === 'paper' && computerSelection === 'rock'){
-        alert('you win as paper beats rock')
+        console.log('you win as paper beats rock')
     }
     
     else if (conversion === 'paper' && computerSelection === 'scissor'){
-        alert('you lose scissor beats paper')
+        console.log('you lose scissor beats paper')
     }
     
     else if (conversion === 'scissor' && computerSelection === 'paper'){
-        alert('you win scissor beats paper')
+        console.log('you win scissor beats paper')
     }
     
     else if (conversion === 'scissor' && computerSelection === 'rock') {
-        alert('you lose rock beats scissor')
+        console.log('you lose rock beats scissor')
     }
     
     else {
-        alert('Draw!!')
+        console.log('Draw!!')
     }
     
-    console.log(computerSelection);
 }
 
-let result = playRound(playerSelection,computerSelection)
+playRound(playerSelection,computerSelection) //function call
 
 
+function game () {
+    for (i = 0; i < 4; i++) {
+        playRound()
+    }
 
+}
+
+game()
