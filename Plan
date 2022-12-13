@@ -9,52 +9,94 @@ Given your inputs, what are the steps necessary to return the desired output?
 
 
 
-ONE ROUND FUNCTION
-Does your program have a user interface? What will it look like? What functionality will the interface have? 
-Sketch this out on paper.
-
-
-
-What inputs will your program have? Will the user enter data or will you get input from somewhere else?
-The input will be hardcoded. 
-
-
-What’s the desired output?
-The desired output will display a string of the result
-
-
-Given your inputs, what are the steps necessary to return the desired output?
-if user enters rock computer will win if it pulls paper.
-sissor will be beaten by rock
-paper will be beaten by scissor.
-
-
-
-
-to buy are 
-one full sleeve top
-two home trousers
-one oversized tshirt
-
-
-
-
-
-
-
-
 
 Does your program have a user interface? What will it look like? What functionality will the interface have? 
-Yes it will have the prompt. The user will be entering their input in the prompt.
 
 
 
 
 What inputs will your program have? Will the user enter data or will you get input from somewhere else?
 
+the user will enter the input on the prompt box and if the user wins add one point to the user.
+
 What’s the desired output?
+Display a output that tells the user that he has either won or lost.
 
 Given your inputs, what are the steps necessary to return the desired output?
+When the user enters the answer, depending on the inpuer the will either lose or win.
+If he wins more than three times than he wins.
+
+Psedudo code
+User enter input
+decide weather her won or not
+if he wins add one point to a variable
+If he gets more than three points he wins
+diplay the result.
+
+
+PSEUDOCODE 2
+create a variable with the value of console.log
+assign the var to the if statements
+create a new var and call it score
+if uses get one of the win variable, plus one to the score variable
+when the playround is complete and the user get the score for greater than 3. 
+Output the user wins.
+
+
+
+user input goes to PLAYERSLECTION
+computer input to COMPUTERSELECTION
+PLAYERSELECTIONG goes to CONVERSION
+
+
+if i = 0 and i is less than conversion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						PROBLEMS
+
+
+
+adding the result value to one variable because right now the score is unable to cocatinate with the out put of the 
+playround
+
+1.
+For the winning string create a variables. 
+Use that variables in the if statement and see what happens
+DID NOT WORK- CONSOLE.LOG PRINTERD THE VARIABLE PERMANENTLY AND DOES NOT RETURN THE WIN VARIABLES
+
+
+2.
+just write the strings with the return key word
+WORKED
+
+
+Create a scoring mechanism that will add one each time the use wins
+previous I had a score variable with number 0
+if the function displays a win result add one to the score
+if not than 0.
+than store the score in the browser storage 
+and display the result in the page
+THIS DID NOT WORK.
+
+TRY NUMBER 1
+create two var : win and lose.
+if user get winning result add one to win
+if lose than add one to lose.
+store these values in the cache and display them.
+
+
 
 
 
