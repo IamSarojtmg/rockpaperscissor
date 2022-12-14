@@ -7,10 +7,13 @@
   <title>Rock paper scissors</title>
 </head>
 <body>
-  <p>Win - <span id="winScore"></span></p>
+  <p>Win - <span id="winScore"></span></p> 
+  <!-- the id is concatinated with the getelementbyid on line 65 of javascript.  -->
   <p>Lose - <span id="loseScore"></span></p>
   <p>Draw - <span id="drawScore"></span></p>
   <h1>Final Score - <span id="finalScore"></span></h1>
 </body>
 <script src="./game.js"></script>
+<!-- for some reason writing the script in the end seems to work rather than before the body. -->
+<!-- it also work when you add it inside the end of the body tag. -->
 </html>

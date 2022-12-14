@@ -3,6 +3,8 @@ function getComputerChoice() {
     let choices = ['rock','paper','scissor']
     
     let getRandom = choices[Math.floor(Math.random() * choices.length)]
+    // math.floor will round down and return a whole number nearest to the provided number. e.g 5.60 will be 5, -2.33 will be 3. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor#:~:text=The%20Math.floor()%20function,equal%20to%20a%20given%20number.
+    // math.random will return between 0 and 1.
     // choices.length for randon three arrays on choices
     return(getRandom)
     
@@ -85,9 +87,9 @@ function getDrawScore (){
 
 //this code will run the game 5 times and also process the scoring functions.
 function game(){
-    for(i = 0;i <= 4; i++) //using loop to run it 5 times
+    for(i = 0;i <= 4; i++) //using loop to run it 5 times. It starts at 0 and finishes at 4 so a total of 5 loops.
     {   
-        let roundResult = playRound() // changing to variabe to be used in the if statement.
+        let roundResult = playRound() // changing into variabe to be used in the if statement.
         console.log(roundResult)
         
         
