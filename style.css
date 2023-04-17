@@ -1,0 +1,110 @@
+@font-face {
+    font-family: playStation;
+    src: url(./Fonts/zrnic\ rg.ttf);
+}
+
+@font-face {
+    font-family: evilEmpire;
+    src: url(./Fonts/EvilEmpire-4BBVK.ttf);
+}
+
+@font-face {
+    font-family: starWars;
+    src: url(./Fonts/SfDistantGalaxy-0l3d.ttf);
+}
+
+body
+{
+    color: white;
+    /* background-image:url(./wallpaper2.jpg) ;
+    background-size: cover; */
+    background-color: black;
+}
+
+.heading
+{
+    font-family: playStation;
+    text-align: center;
+}
+
+@keyframes learning {
+0%  {top: -500px;}
+50% {top: 0px;}
+}
+
+@keyframes color {
+    from {color: red;}
+    to  {color: white;}
+}
+
+.story-highlight{
+    animation-name: color;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+}
+
+.story
+{    animation-name: learning;
+    animation-duration: 1s;
+    font-family: starWars;
+    font-size: 25px;
+    text-align: center;
+    margin: 100px 0;
+    padding: 0 100px; 
+    /* border: solid; */
+    position: relative;
+}
+
+.signs
+{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+
+.rock, .paper, .scissor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 160px;
+    width: 160px;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: rgb(24, 23, 23);
+    user-select: none;
+    /* document this */
+  }
+
+section:hover{
+    background-color: rgb(54, 50, 50);
+}
+
+.scores{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 30px;
+    font-size: xx-large;
+    font-family: playStation;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.finalScore{
+text-align: center;
+font-family: playStation;
+font-size: xx-large;
+}
+
+.images{
+    border: solid;
+    display: flex;
+    justify-content: center;
+
+}
+
